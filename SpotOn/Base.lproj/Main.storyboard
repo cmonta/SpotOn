@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HTL-ka-Qfl">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpotOn" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,72 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unknow" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pc-ZF-UAZ">
+                                <rect key="frame" x="20" y="289" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajv-PR-GEc">
+                                <rect key="frame" x="248" y="340" width="104" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="KeL-sb-xlj"/>
+                                </constraints>
+                                <state key="normal" title="Select an artist"/>
+                                <connections>
+                                    <action selector="artistButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sCl-fO-O1r"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Followers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yw6-FZ-JVR">
+                                <rect key="frame" x="243" y="443" width="115" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="NjZ-m4-7OD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5pc-ZF-UAZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3gc-G4-2Li"/>
+                            <constraint firstItem="5pc-ZF-UAZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ULm-9t-JCo"/>
+                            <constraint firstItem="yw6-FZ-JVR" firstAttribute="top" secondItem="ajv-PR-GEc" secondAttribute="bottom" constant="59" id="cJg-u0-jS3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5pc-ZF-UAZ" secondAttribute="trailing" id="eQ8-5w-gzm"/>
+                            <constraint firstItem="ajv-PR-GEc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hCF-3a-GQC"/>
+                            <constraint firstItem="yw6-FZ-JVR" firstAttribute="centerX" secondItem="ajv-PR-GEc" secondAttribute="centerX" id="nSZ-39-zK8"/>
+                            <constraint firstItem="5pc-ZF-UAZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qMx-SR-dA8"/>
+                            <constraint firstItem="ajv-PR-GEc" firstAttribute="top" secondItem="5pc-ZF-UAZ" secondAttribute="bottom" constant="30" id="zBa-dP-IPF"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="hfi-BO-OLr"/>
+                    <connections>
+                        <outlet property="artistLabel" destination="5pc-ZF-UAZ" id="Fqq-a5-R2u"/>
+                        <outlet property="followersLabel" destination="yw6-FZ-JVR" id="NAK-BM-xjj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="786" y="247"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9ue-A7-VTV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HTL-ka-Qfl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DVH-aN-8Wp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RMn-1g-HPX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="erT-1v-gFQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="27" y="247"/>
         </scene>
     </scenes>
 </document>

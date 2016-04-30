@@ -15,6 +15,9 @@
 		F17627801CBBE83D00ECE216 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F176277E1CBBE83D00ECE216 /* LaunchScreen.storyboard */; };
 		F176278B1CBBE83D00ECE216 /* SpotOnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F176278A1CBBE83D00ECE216 /* SpotOnTests.swift */; };
 		F17627961CBBE83D00ECE216 /* SpotOnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17627951CBBE83D00ECE216 /* SpotOnUITests.swift */; };
+		F19D7E6E1CC95AAD00A0F04F /* ArtistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19D7E6D1CC95AAD00A0F04F /* ArtistItem.swift */; };
+		F1AFB48E1CC37F5C00CAC764 /* SpotFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AFB48D1CC37F5C00CAC764 /* SpotFeed.swift */; };
+		F1F6F1AC1CC4BE080059A612 /* SpotRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F6F1AB1CC4BE080059A612 /* SpotRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		F17627911CBBE83D00ECE216 /* SpotOnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotOnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17627951CBBE83D00ECE216 /* SpotOnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotOnUITests.swift; sourceTree = "<group>"; };
 		F17627971CBBE83D00ECE216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F19D7E6D1CC95AAD00A0F04F /* ArtistItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistItem.swift; sourceTree = "<group>"; };
+		F1AFB48D1CC37F5C00CAC764 /* SpotFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotFeed.swift; sourceTree = "<group>"; };
+		F1F6F1AB1CC4BE080059A612 /* SpotRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 				F17627721CBBE83D00ECE216 /* AppDelegate.swift */,
 				F17627741CBBE83D00ECE216 /* ViewController.swift */,
 				F17627761CBBE83D00ECE216 /* Main.storyboard */,
+				F1F6F1AB1CC4BE080059A612 /* SpotRequest.swift */,
+				F1AFB48D1CC37F5C00CAC764 /* SpotFeed.swift */,
+				F19D7E6D1CC95AAD00A0F04F /* ArtistItem.swift */,
 				F176277C1CBBE83D00ECE216 /* Assets.xcassets */,
 				F176277E1CBBE83D00ECE216 /* LaunchScreen.storyboard */,
 				F17627811CBBE83D00ECE216 /* Info.plist */,
@@ -259,9 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1F6F1AC1CC4BE080059A612 /* SpotRequest.swift in Sources */,
+				F19D7E6E1CC95AAD00A0F04F /* ArtistItem.swift in Sources */,
 				F17627751CBBE83D00ECE216 /* ViewController.swift in Sources */,
 				F176277B1CBBE83D00ECE216 /* SpotOn.xcdatamodeld in Sources */,
 				F17627731CBBE83D00ECE216 /* AppDelegate.swift in Sources */,
+				F1AFB48E1CC37F5C00CAC764 /* SpotFeed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +498,7 @@
 				F176279C1CBBE83D00ECE216 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F176279D1CBBE83D00ECE216 /* Build configuration list for PBXNativeTarget "SpotOnTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +507,7 @@
 				F176279F1CBBE83D00ECE216 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F17627A01CBBE83D00ECE216 /* Build configuration list for PBXNativeTarget "SpotOnUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +516,7 @@
 				F17627A21CBBE83D00ECE216 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
